@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Harshita ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"Trebuchet MS",system-ui,sans-serif;
+  min-height:100vh; overflow:hidden; color:#4a2740;
+  background:linear-gradient(180deg,#ffb6c9 0%,#ffd6b8 48%,#ffe8d5 100%);
+}
+.scene{position:relative;width:100%;height:100vh;overflow:hidden}
+.sun{position:absolute;width:150px;height:150px;border-radius:50%;background:#ffd36a;
+ box-shadow:0 0 55px #ffd36a;left:50%;top:24%;transform:translate(-50%,-50%)}
+.sky{position:absolute;inset:0;background:linear-gradient(#9b7be8aa,#ff9b9baa 42%,transparent 70%)}
+.sea{position:absolute;bottom:0;width:100%;height:42%;background:linear-gradient(#ef9dba,#f5c3ba 45%,#f9d6bd)}
+.wave{position:absolute;bottom:31%;width:140%;height:90px;left:-20%;
+ border-radius:50%;background:#fff5ee55;animation:wave 6s ease-in-out infinite}
+.sand{position:absolute;bottom:0;width:100%;height:25%;background:#f7d8a7}
+.card{
+ position:absolute;z-index:5;top:50%;left:50%;transform:translate(-50%,-50%);
+ width:min(92%,520px);padding:32px 24px;text-align:center;
+ background:#ffffffd9;backdrop-filter:blur(10px);border:2px solid #fff;
+ border-radius:30px;box-shadow:0 20px 60px #7c426633
+}
+h1{font-size:clamp(30px,8vw,52px);color:#e85d85;margin-bottom:10px}
+h2{font-size:24px;margin:8px 0 14px}
+p{font-size:17px;line-height:1.6}
+.husky{font-size:72px;animation:bob 2s infinite ease-in-out}
+.panda{font-size:54px;margin:8px}
+button{
+ border:0;border-radius:999px;padding:13px 24px;font-size:16px;font-weight:bold;
+ cursor:pointer;transition:.25s;box-shadow:0 8px 20px #8e476633
+}
+.yes{background:#ff668d;color:white}.next{background:#8f72e8;color:white}
+.no{background:#eee;color:#555;position:relative}
+.buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:22px}
+.hidden{display:none!important}
+.page{animation:fade .55s ease}
+.butterfly{position:absolute;font-size:30px;z-index:3;animation:fly 8s infinite ease-in-out}
+.b1{left:8%;top:25%}.b2{right:10%;top:18%;animation-delay:2s}.b3{right:18%;bottom:28%;animation-delay:4s}
+.heart{position:absolute;z-index:2;font-size:22px;animation:float 7s linear infinite;bottom:-40px}
+.h1{left:15%;animation-delay:1s}.h2{left:45%;animation-delay:3s}.h3{left:78%;animation-delay:5s}
+.popup{
+ position:fixed;z-index:20;inset:0;background:#48203b88;display:flex;align-items:center;justify-content:center;
+ padding:20px
+}
+.popupbox{background:#fff8fb;border-radius:28px;padding:30px;max-width:390px;text-align:center;box-shadow:0 20px 80px #32122666}
+.popupbox h2{color:#e85d85;font-size:30px}
+.close{background:#e85d85;color:#fff;margin-top:18px}
+.small{font-size:13px;opacity:.7;margin-top:15px}
+.celebrate{font-size:60px;animation:bob 1s infinite alternate}
+@keyframes fade{from{opacity:0;transform:translate(-50%,-47%)}to{opacity:1;transform:translate(-50%,-50%)}}
+@keyframes bob{50%{transform:translateY(-8px) rotate(-2deg)}}
+@keyframes wave{50%{transform:translateX(5%) rotate(1deg)}}
+@keyframes fly{0%,100%{transform:translate(0,0) rotate(-8deg)}50%{transform:translate(45px,-70px) rotate(15deg)}}
+@keyframes float{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="sky"></div><div class="sun"></div><div class="sea"></div><div class="wave"></div><div class="sand"></div>
+  <div class="butterfly b1">🦋</div><div class="butterfly b2">🦋</div><div class="butterfly b3">🦋</div>
+  <div class="heart h1">❤️</div><div class="heart h2">💗</div><div class="heart h3">💕</div>
+
+  <main class="card">
+    <section id="page1" class="page">
+      <div class="husky">🐺</div>
+      <h1>Hey Harshita ❤️</h1>
+      <p>I made a little corner of the internet just for you...</p>
+      <div class="panda">🐼 🦋</div>
+      <p>Because sometimes my words don't say enough.</p>
+      <div class="buttons"><button class="next" onclick="showPage(2)">Open it 💌</button></div>
+    </section>
+
+    <section id="page2" class="page hidden">
+      <div class="husky">🐺</div>
+      <h2>I know you're hurt... 🥺</h2>
+      <p>
+        I know you wanted me to be there for you, especially when things were
+        really difficult. And when you needed me, I wasn't there the way I should have been.
+      </p>
+      <div class="buttons"><button class="next" onclick="showPage(3)">Keep reading 💗</button></div>
+    </section>
+
+    <section id="page3" class="page hidden">
+      <div class="panda">🐼❤️</div>
+      <h2>I'm sorry, Harshita.</h2>
+      <p>
+        I love you more than I sometimes know how to express.
+        I don't want “I love you” to just be words. I want you to feel it
+        through the way I listen, understand you, care for you and show up for you.
+      </p>
+      <div class="buttons"><button class="next" onclick="showPage(4)">One last thing... 🌅</button></div>
+    </section>
+
+    <section id="page4" class="page hidden">
+      <div class="celebrate">🌅❤️🐺</div>
+      <h2>Can we try again?</h2>
+      <p>
+        I know I can't change the past, but I can change how I love you from now on.
+        I don't expect everything to become okay instantly.
+        I just want the chance to prove it with my actions.
+      </p>
+      <div class="buttons">
+        <button class="yes" onclick="yesAnswer()">YES 🥺❤️</button>
+        <button class="no" id="noBtn" onmouseover="moveNo()" onclick="moveNo()">NO 😤</button>
+      </div>
+      <div class="small">P.S. The beach sunset is waiting for your answer 🌊🌅</div>
+    </section>
+
+    <section id="page5" class="page hidden">
+      <div class="celebrate">🥹💖🐼🦋</div>
+      <h1>Thank you ❤️</h1>
+      <p>
+        I promise I'm going to try harder—not just today, but every day.
+        You deserve to feel loved, understood and cared for.
+      </p>
+      <h2>I love you, Harshita. ❤️</h2>
+      <div class="buttons"><button class="next" onclick="openPopup()">One more surprise 💌</button></div>
+    </section>
+  </main>
+</div>
+
+<div id="popup" class="popup hidden">
+  <div class="popupbox">
+    <h2>🐺💌🐼</h2>
+    <h2>For my favourite person</h2>
+    <p style="margin-top:12px">
+      If you're still angry, that's okay. Take your time.
+      I just hope someday I can make you smile again. 🥺❤️
+    </p>
+    <button class="close" onclick="closePopup()">Come here, silly 🫂</button>
+  </div>
+</div>
+
+<script>
+let current=1;
+function showPage(n){
+  document.getElementById("page"+current).classList.add("hidden");
+  current=n;
+  document.getElementById("page"+n).classList.remove("hidden");
+}
+function moveNo(){
+  const b=document.getElementById("noBtn");
+  const x=Math.random()*180-90, y=Math.random()*100-50;
+  b.style.transform=`translate(${x}px,${y}px)`;
+  b.innerText=["NO 😤","Are you sure? 🥺","Think again 😭","Please? 🐺","Don't do this 😭❤️"][Math.floor(Math.random()*5)];
+}
+function yesAnswer(){
+  showPage(5);
+  burst();
+}
+function openPopup(){document.getElementById("popup").classList.remove("hidden")}
+function closePopup(){document.getElementById("popup").classList.add("hidden")}
+function burst(){
+  for(let i=0;i<35;i++){
+    const s=document.createElement("span");
+    s.textContent=["❤️","💗","💕","🦋","✨","🐼"][Math.floor(Math.random()*6)];
+    s.style.position="fixed";s.style.zIndex=30;s.style.left="50%";s.style.top="50%";
+    s.style.fontSize=(18+Math.random()*25)+"px";
+    document.body.appendChild(s);
+    const a=Math.random()*Math.PI*2, d=120+Math.random()*280;
+    s.animate([{transform:"translate(-50%,-50%)",opacity:1},
+      {transform:`translate(${Math.cos(a)*d}px,${Math.sin(a)*d}px)`,opacity:0}],
+      {duration:1200+Math.random()*700,easing:"ease-out"}).onfinish=()=>s.remove();
+  }
+}
+</script>
+</body>
+</html>
